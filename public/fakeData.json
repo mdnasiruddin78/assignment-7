@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co.com/3TBtMz8/4qso7d28-bhuvneshwar-afp-625x300-24-January-22.webp",
+        "name": "Ravi Sharma",
+        "team": "Punjab Panthers",
+        "which_handed_bat": "Right-handed",
+        "which_handed_ball": "Right-arm off-spin",
+        "price": 12000000,
+        "category": "Batsman"
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co.com/16JpPR8/haradik-1479447000-sm.webp",
+        "name": "Karan Verma",
+        "team": "Rajasthan Royals",
+        "which_handed_bat": "Left-handed",
+        "which_handed_ball": "Left-arm fast",
+        "price": 13000000,
+        "category": "All-Rounder"
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co.com/DwrHZfr/pablo-gavi-steals-hearts-with-his-special-charm.jpg",
+        "name": "Vikas Gupta",
+        "team": "Chennai Kings",
+        "which_handed_bat": "Right-handed",
+        "which_handed_ball": "Right-arm leg-spin",
+        "price": 14000000,
+        "category": "Bowler"
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co.com/0G4BSCY/0-3-YFj-EKa-SECMDEb-I.jpg",
+        "name": "Ashok Desai",
+        "team": "Bangalore Warriors",
+        "which_handed_bat": "Left-handed",
+        "which_handed_ball": "Right-arm medium",
+        "price": 15000000,
+        "category": "Batsman"
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co.com/x5f8ctq/daniel-maldini-is-a-talented-young-attacking-midfielder.jpg",
+        "name": "Manoj Tiwari",
+        "team": "Mumbai Titans",
+        "which_handed_bat": "Right-handed",
+        "which_handed_ball": "Left-arm orthodox",
+        "price": 10000000,
+        "category": "All-Rounder"
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co.com/4jVv1h2/india-national-cricket-team-ravindra-jadeja-smiling-kbpk3neu7xj76nhg.jpg",
+        "name": "Rahul Singh",
+        "team": "Delhi Strikers",
+        "which_handed_bat": "Left-handed",
+        "which_handed_ball": "Right-arm fast",
+        "price": 17000000,
+        "category": "Bowler"
+    }
+]
