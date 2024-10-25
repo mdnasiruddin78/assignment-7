@@ -47,10 +47,17 @@ function App() {
     } 
   }
 
+  const [addMoney, setAddMoney] = useState(0)
+
+  const hendleAddFreeAmount = () => {
+    const newMoney = addMoney + 2040048
+    setAddMoney(newMoney)
+  }
+
   return (
     <>
-      <Navbar></Navbar> 
-      <Header></Header>
+      <Navbar addMoney={addMoney}></Navbar> 
+      <Header hendleAddFreeAmount={hendleAddFreeAmount}></Header>
         <CartContainer isActive={isActive} hendleAddSelected={hendleAddSelected} 
         hendleAddIsActive={hendleAddIsActive} addSelected={addSelected}
         hendleDelete={hendleDelete}></CartContainer>

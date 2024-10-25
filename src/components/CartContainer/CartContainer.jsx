@@ -29,7 +29,7 @@ const CartContainer = ({hendleAddIsActive,isActive,
           <div>
             {
             isActive.bat?<Available hendleAddSelected={hendleAddSelected} 
-            playerInfo={playerInfo}></Available>:<Selected  
+            playerInfo={playerInfo}></Available>:<Selected isActive={isActive} 
             addSelected={addSelected} hendleDelete={hendleDelete}></Selected>
             }
           </div>

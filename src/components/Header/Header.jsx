@@ -13,7 +13,7 @@ const Header = ({hendleAddFreeAmount}) => {
                 <h3 className='text-white text-4xl font-bold'>
                     Assemble Your Ultimate Dream 11 Cricket Team</h3>
                 <p className='text-gray-500'>Beyond Boundaries Beyond Limits</p>
-                <button onClick={()=>hendleAddFreeAmount()} className='bg-[#e7fe29] p-3 rounded-xl font-bold
+                <button onClick={()=>hendleAddFreeAmount(10000000)} className='bg-[#e7fe29] p-3 rounded-xl font-bold
                 border-4 border-black outline outline-offset
                  outline-[#e7fe29]'>Claim Free Credit</button>
             </div>

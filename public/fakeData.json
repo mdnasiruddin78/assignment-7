@@ -6,7 +6,7 @@
         "team": "Punjab Panthers",
         "which_handed_bat": "Right-handed",
         "which_handed_ball": "Right-arm off-spin",
-        "price": 12000000,
+        "price": 1200000,
         "category": "Batsman"
     },
     {
@@ -16,7 +16,7 @@
         "team": "Rajasthan Royals",
         "which_handed_bat": "Left-handed",
         "which_handed_ball": "Left-arm fast",
-        "price": 13000000,
+        "price": 1300000,
         "category": "All-Rounder"
     },
     {
@@ -26,7 +26,7 @@
         "team": "Chennai Kings",
         "which_handed_bat": "Right-handed",
         "which_handed_ball": "Right-arm leg-spin",
-        "price": 14000000,
+        "price": 1400000,
         "category": "Bowler"
     },
     {
@@ -36,7 +36,7 @@
         "team": "Bangalore Warriors",
         "which_handed_bat": "Left-handed",
         "which_handed_ball": "Right-arm medium",
-        "price": 15000000,
+        "price": 1500000,
         "category": "Batsman"
     },
     {
@@ -46,7 +46,7 @@
         "team": "Mumbai Titans",
         "which_handed_bat": "Right-handed",
         "which_handed_ball": "Left-arm orthodox",
-        "price": 10000000,
+        "price": 1000000,
         "category": "All-Rounder"
     },
     {
@@ -56,7 +56,7 @@
         "team": "Delhi Strikers",
         "which_handed_bat": "Left-handed",
         "which_handed_ball": "Right-arm fast",
-        "price": 17000000,
+        "price": 1700000,
         "category": "Bowler"
     }
 ]

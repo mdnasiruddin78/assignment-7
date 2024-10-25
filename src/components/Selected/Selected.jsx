@@ -4,7 +4,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 
 const Selected = ({addSelected,hendleDelete}) => {
     return (
-        <div>
+        <div className="mb-[200px]">
             <h3 className="text-3xl font-bold">Selected Player 
                 ({addSelected.length}/6)</h3>
                 {
@@ -27,7 +27,7 @@ const Selected = ({addSelected,hendleDelete}) => {
                         </div>
                     ))
                 }
-                    <button className="bg-[#e7fe29] mt-4 rounded-xl p-2
+                    <button className="bg-[#e7fe29] mt-4 rounded-xl p-2 
                     border-4 border-white outline outline-offset outline-black">Add More Player</button>
         </div>
     );
