@@ -4,9 +4,10 @@ import cricket from '../../assets/assets/banner-main.png'
 import bgImage from '../../assets/assets/bg-shadow.png'
 
 
+
 const Header = () => {
     return (
-        <div className='w-11/12 mx-auto'>
+        <div className='w-11/12 mx-auto mb-10'>
             <div className='flex justify-between mt-10 mb-10 
             sticky top-0 z-50 backdrop-blur bg-white/10'>
                 <div>
@@ -25,8 +26,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-black h-[510px] rounded-xl text-center space-y-8 relative'>
-                <img className='absolute rounded-xl' src={bgImage} alt="" />
+            <div className='bg-black rounded-xl text-center space-y-8'>
                 <div className='flex justify-center'>
                     <img className='border-2 border-dashed 
                     border-gray-500' src={cricket} alt=""/>
@@ -35,7 +35,7 @@ const Header = () => {
                     Assemble Your Ultimate Dream 11 Cricket Team</h3>
                 <p className='text-gray-500'>Beyond Boundaries Beyond Limits</p>
                 <button className='bg-[#e7fe29] p-3 rounded-xl font-bold
-                border-4 border-black'>Claim Free Credit</button>
+                border-4 border-black outline outline-offset outline-[#e7fe29]'>Claim Free Credit</button>
             </div>
         </div>
     );
