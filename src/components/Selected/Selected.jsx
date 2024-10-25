@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 
+
 const Selected = ({addSelected,hendleDelete}) => {
     return (
         <div className="mb-[200px]">

@@ -4,6 +4,8 @@ import CartContainer from './components/CartContainer/CartContainer'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -39,7 +41,7 @@ function App() {
     const isExist = addSelected.find((i) => i.id === player.id)
 
     if(isExist){
-      alert('alrady exist')
+      toast('alrady exist')
     }
     else{
       const newSelected = [...addSelected,player]

@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import { LuUserCircle2 } from "react-icons/lu";
 import { FaFlag } from "react-icons/fa6";
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Cart = ({player,hendleAddSelected}) => {
@@ -28,6 +30,7 @@ const Cart = ({player,hendleAddSelected}) => {
                 </div>
                 <div className="flex justify-between items-center">
                     <p>price: ${price}</p>
+                    <ToastContainer/>
                     <button onClick={()=>hendleAddSelected(player)} 
                     className="border rounded-xl p-2 hover:bg-[#e7fe29]">Choose Player</button>
                 </div>
