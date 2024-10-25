@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import Available from "../Available/Available";
 import Selected from "../Selected/Selected";
-
+import './CartContainer.css'
 
 
 const CartContainer = ({hendleAddIsActive,isActive}) => {
@@ -27,7 +27,7 @@ const CartContainer = ({hendleAddIsActive,isActive}) => {
           </div>
           <div>
             {
-                isActive.bat?<Available playerInfo={playerInfo}></Available>:<Selected></Selected>
+            isActive.bat?<Available playerInfo={playerInfo}></Available>:<Selected></Selected>
             }
           </div>
         </div>

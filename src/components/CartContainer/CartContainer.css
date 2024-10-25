@@ -1,0 +1,10 @@
+.btn{
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.active{
+    background-color: rgb(231, 254, 41);
+    border-radius: 10px;
+}
