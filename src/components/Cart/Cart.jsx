@@ -17,7 +17,7 @@ const Cart = ({player,hendleAddSelected}) => {
                 </div>
                 <div className="flex justify-between items-center">
                     <div className="flex space-x-2 items-center">
-                        <FaFlag />
+                        <FaFlag className="text-gray-500"/>
                         <p>{team}</p>
                     </div>
                     <p className="bg-gray-200 p-2 rounded-xl">{category}</p>
