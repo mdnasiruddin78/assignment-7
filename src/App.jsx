@@ -28,20 +28,32 @@ function App() {
     }
   }
 
-  const [addMoney, setAddMoney] = useState()
+  const [addSelected, setAddSelected] = useState([])
 
+  const hendleDelete = (id) => {
+    const removeItem = addSelected.filter((x) => x.id !== id)
+    setAddSelected(removeItem)
+  }
 
-  const hendleAddFreeAmount = (balance) => {
-      const newAddMoney = balance + 2; 
-      setAddMoney(newAddMoney)
+  const hendleAddSelected = (player) => {
+    const isExist = addSelected.find((i) => i.id === player.id)
+
+    if(isExist){
+      alert('alrady exist')
+    }
+    else{
+      const newSelected = [...addSelected,player]
+      setAddSelected(newSelected)
+    } 
   }
 
   return (
     <>
-      <Navbar addMoney={addMoney}></Navbar> 
-      <Header hendleAddFreeAmount={hendleAddFreeAmount}></Header>
-        <CartContainer isActive={isActive} 
-        hendleAddIsActive={hendleAddIsActive}></CartContainer>
+      <Navbar></Navbar> 
+      <Header></Header>
+        <CartContainer isActive={isActive} hendleAddSelected={hendleAddSelected} 
+        hendleAddIsActive={hendleAddIsActive} addSelected={addSelected}
+        hendleDelete={hendleDelete}></CartContainer>
       <Footer></Footer>
     </>
   )

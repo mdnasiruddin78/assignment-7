@@ -3,12 +3,12 @@ import { LuUserCircle2 } from "react-icons/lu";
 import { FaFlag } from "react-icons/fa6";
 
 
-const Cart = ({player}) => {
+const Cart = ({player,hendleAddSelected}) => {
     const {image,name,team,which_handed_bat
         ,which_handed_ball,price,category} = player;
     return (
-        <div className="border-2 rounded-xl space-y-3 p-4">
-                <img className="w-[400px] h-[300px] rounded-xl" src={image} alt="" />
+        <div className="border-2 rounded-xl space-y-3 p-5">
+                <img className="w-[400px] h-[200px] rounded-xl" src={image} alt="" />
                 <div className="flex items-center space-x-2">
                     <LuUserCircle2 className="text-2xl" />
                     <h3 className="font-bold">{name}</h3>
@@ -28,7 +28,8 @@ const Cart = ({player}) => {
                 </div>
                 <div className="flex justify-between items-center">
                     <p>price: ${price}</p>
-                    <button className="border rounded-xl p-2">Choose Player</button>
+                    <button onClick={()=>hendleAddSelected(player)} 
+                    className="border rounded-xl p-2 hover:bg-[#e7fe29]">Choose Player</button>
                 </div>
         </div>
     );
@@ -36,6 +37,7 @@ const Cart = ({player}) => {
 
 Cart.propTypes = {
     player: PropTypes.object,
+    hendleAddSelected: PropTypes.func,
 }
 
 export default Cart;

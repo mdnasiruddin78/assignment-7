@@ -3,11 +3,17 @@ import footerPng from '../../assets/assets/logo-footer.png'
 
 const Footer = () => {
     return (
-        <div className="bg-[#06091a] mt-10">
-           <div className="w-11/12 mx-auto">
-                <div className='flex justify-center'>
-                    <img className='border-2 border-dashed 
-                    border-gray-500' src={footerPng} alt="" />
+        <div className="bg-[#06091a] mt-10 relative">
+           <div className="max-w-6xl mx-auto mt-40">
+                <div className='flex justify-center absolute
+                 bottom-[300px] left-[310px]'>
+                    <div className='text-center text-red-600 
+                    border-2 border-red-500 w-[700px] h-[300px]'>
+                        <h3>hello main section addd</h3>
+                    </div>
+                </div>
+                <div className='flex justify-center '>
+                    <img src={footerPng} alt="" />
                 </div>
                 <br/>
                 <br/>

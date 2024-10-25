@@ -4,7 +4,7 @@ import cricket from '../../assets/assets/banner-main.png'
 
 const Header = ({hendleAddFreeAmount}) => {
     return (
-        <div className='w-11/12 mx-auto mb-10'>
+        <div className='max-w-6xl mx-auto mb-10'>
             <div className='bg-black rounded-xl text-center space-y-8 bg-no-repeat bg-cover p-10'
              style={{backgroundImage: "url(https://i.ibb.co.com/vq1CdxG/bg-shadow.png)"}}>
                 <div className='flex justify-center'>
