@@ -6,6 +6,7 @@ import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer} from 'react-toastify';
 
 
 function App() {
@@ -33,20 +34,44 @@ function App() {
   const [addSelected, setAddSelected] = useState([])
 
   const hendleDelete = (id) => {
+    removeMoneyReturn(id)
     const removeItem = addSelected.filter((x) => x.id !== id)
     setAddSelected(removeItem)
+    toast('Selected Player Remove',{
+      position: "top-center",
+    })
+  }
+
+  const removeMoneyReturn = (id) => {
+      const money = addSelected.find((r) => r.id == id);
+      setBuying(buying + money.price)
   }
 
   const hendleAddSelected = (player) => {
+    if(addMoney === 0){
+       toast('Please Claim Free Credit',{
+            position: "top-center",
+          })
+      return;
+    }
+    if(addSelected.length < 6){
+      toast('no space',{
+        position: "top-center",
+      })
+      return;
+    }
     const isExist = addSelected.find((i) => i.id === player.id)
 
     if(isExist){
-      toast('player already selected')
+      toast('player already selected',{
+        position: "top-center",
+      })
     }
     else{
+      hendleBuyingPrice(player.price)
       const newSelected = [...addSelected,player]
       setAddSelected(newSelected)
-    } 
+    }
   }
 
   const [addMoney, setAddMoney] = useState(0)
@@ -54,16 +79,29 @@ function App() {
   const hendleAddFreeAmount = () => {
     const newMoney = addMoney + 2040048
     setAddMoney(newMoney)
+    toast('money successfully add',{
+      position: "top-center",
+    })
+  }
+
+  const [buying, setBuying] = useState(0)
+
+  const hendleBuyingPrice = (newPrice) => {
+        setBuying(buying - newPrice)
+        toast('Player Selected',{
+          position: "top-center",
+        })
   }
 
   return (
     <>
-      <Navbar addMoney={addMoney}></Navbar> 
+      <Navbar addMoney={addMoney} buying={buying}></Navbar> 
       <Header hendleAddFreeAmount={hendleAddFreeAmount}></Header>
         <CartContainer isActive={isActive} hendleAddSelected={hendleAddSelected} 
         hendleAddIsActive={hendleAddIsActive} addSelected={addSelected}
         hendleDelete={hendleDelete}></CartContainer>
       <Footer></Footer>
+      <ToastContainer/>
     </>
   )
 }
