@@ -5,7 +5,7 @@ import logoImage from '../../assets/assets/logo.png'
 
 const Navbar = ({addMoney}) => {
     return (
-        <div className='w-11/12 mx-auto flex justify-between mt-10 mb-10 
+        <div className='max-w-6xl mx-auto flex justify-between mt-10 mb-10 
         sticky top-0 z-50 backdrop-blur bg-white/30'>
             <div>
                 <img src={logoImage} alt="" />

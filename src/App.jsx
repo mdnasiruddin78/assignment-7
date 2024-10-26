@@ -41,7 +41,7 @@ function App() {
     const isExist = addSelected.find((i) => i.id === player.id)
 
     if(isExist){
-      toast('alrady exist')
+      toast('player already selected')
     }
     else{
       const newSelected = [...addSelected,player]
