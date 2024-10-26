@@ -82,7 +82,7 @@ function App() {
   const hendleAddFreeAmount = () => {
     const newMoney = addMoney + 2040048
     setAddMoney(newMoney)
-    toast('money successfully add',{
+    toast('Add Free Coin',{
       position: "top-center",
     })
   }
