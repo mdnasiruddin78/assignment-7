@@ -19,7 +19,7 @@ const Selected = ({addSelected,hendleDelete,hendleAddIsActive,isActive}) => {
                                     <div>
                                         <h3 className="font-bold">{max.name}</h3>
                                         <p className="text-gray-500">${max.price}</p>
-                                        <p>{Date()}</p>
+                                        <p>{max.which_handed_bat}</p>
                                     </div>
                                 </div>
                                 <div>

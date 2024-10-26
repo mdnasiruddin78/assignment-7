@@ -4,7 +4,7 @@
         "image": "https://i.ibb.co.com/LRcqh7V/TELEMMGLPICT000201043726-trans-Nv-BQz-QNjv4-Bq-Qt1iuv-Wth76e9d-IW2-U0-See-W-B59y-Sl-NOPo8-i5-J48.webp",
         "name": "Sakib Al Hasan",
         "team": "Bangladesh",
-        "which_handed_bat": "Right-handed",
+        "which_handed_bat": "Right-handed bat",
         "which_handed_ball": "Right-arm off-spin",
         "price": 1200000,
         "category": "All-Rounder"
@@ -14,7 +14,7 @@
         "image": "https://i.ibb.co.com/yhpf0KX/hazelwood-290424-01-1716986387.jpg",
         "name": "Stoke Smith",
         "team": "England",
-        "which_handed_bat": "Left-handed",
+        "which_handed_bat": "Left-handed bat",
         "which_handed_ball": "Left-arm fast",
         "price": 1300000,
         "category": "All-Rounder"
@@ -24,7 +24,7 @@
         "image": "https://i.ibb.co.com/PrXSGPn/361170.webp",
         "name": "Virat Kholi",
         "team": "India",
-        "which_handed_bat": "Right-handed",
+        "which_handed_bat": "Right-handed bat",
         "which_handed_ball": "Right-arm leg-spin",
         "price": 1400000,
         "category": "Batsman"
@@ -34,7 +34,7 @@
         "image": "https://i.ibb.co.com/0G4BSCY/0-3-YFj-EKa-SECMDEb-I.jpg",
         "name": "Tamim Iqbal",
         "team": "Bangladesh",
-        "which_handed_bat": "Left-handed",
+        "which_handed_bat": "Left-handed bat",
         "which_handed_ball": "Right-arm medium",
         "price": 1500000,
         "category": "Batsman"
@@ -44,7 +44,7 @@
         "image": "https://i.ibb.co.com/JztTBcH/130856522-gettyimages-1611750704-jpg.webp",
         "name": "Jasprit Bumra",
         "team": "India",
-        "which_handed_bat": "Right-handed",
+        "which_handed_bat": "Right-handed bat",
         "which_handed_ball": "Left-arm orthodox",
         "price": 1000000,
         "category": "Bowler"
@@ -54,7 +54,7 @@
         "image": "https://i.ibb.co.com/ssM5WBx/b6byhxtzflxmwxdbsl79.jpg",
         "name": "Mahmudullah Riyad",
         "team": "Bangladesh",
-        "which_handed_bat": "Left-handed",
+        "which_handed_bat": "Left-handed bat",
         "which_handed_ball": "Right-arm fast",
         "price": 1700000,
         "category": "All-Rounder"
@@ -64,7 +64,7 @@
         "image": "https://i.ibb.co.com/cD6PJCy/england-cricket-players-6a5b329fd.jpg",
         "name": "Rovert Jmmy",
         "team": "England",
-        "which_handed_bat": "Left-handed",
+        "which_handed_bat": "Left-handed bat",
         "which_handed_ball": "Right-arm fast",
         "price": 1400000,
         "category": "Batsman"
@@ -74,7 +74,7 @@
         "image": "https://i.ibb.co.com/LdyN8Wt/Kane-Williamson.jpg",
         "name": "Kane Williamson",
         "team": "New Zilland",
-        "which_handed_bat": "Left-handed",
+        "which_handed_bat": "Left-handed bat",
         "which_handed_ball": "Right-arm fast",
         "price": 1100000,
         "category": "All-Rounder"
@@ -84,7 +84,7 @@
         "image": "https://i.ibb.co.com/G3swM1y/SLDK6-RG7-DRCMXLS3-XM3-QKFGLVA.jpg",
         "name": "Babar Azzam",
         "team": "Pakistan",
-        "which_handed_bat": "Left-handed",
+        "which_handed_bat": "Left-handed bat",
         "which_handed_ball": "Right-arm fast",
         "price": 1800000,
         "category": "Batsman"

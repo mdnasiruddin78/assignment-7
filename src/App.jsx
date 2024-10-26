@@ -49,7 +49,14 @@ function App() {
 
   const hendleAddSelected = (player) => {
 
-    if(player.id > 6){
+    if(player.price > addMoney){
+      toast('claim some credit',{
+        position: "top-center",
+      })
+      return;
+    }
+
+    if(addSelected.length > 5){
       toast('No Space Available',{
         position: "top-center",
       })
@@ -57,7 +64,7 @@ function App() {
     }
 
     if(addMoney === 0){
-       toast('Please Claim Free Credit',{
+       toast('Not enough money to buy this player.claim some credit',{
             position: "top-center",
           })
       return;
@@ -66,7 +73,7 @@ function App() {
     const isExist = addSelected.find((i) => i.id === player.id)
 
     if(isExist){
-      toast('Player Already Aelected',{
+      toast('Player Already Selected',{
         position: "top-center",
       })
     }
@@ -82,7 +89,7 @@ function App() {
   const hendleAddFreeAmount = () => {
     const newMoney = addMoney + 2040048
     setAddMoney(newMoney)
-    toast('Add Free Coin',{
+    toast('Credit Added To Your Account',{
       position: "top-center",
     })
   }
@@ -91,7 +98,7 @@ function App() {
 
   const hendleBuyingPrice = (newPrice) => {
         setBuying(buying - newPrice)
-        toast('Player Selected',{
+        toast('Congrates player is selected',{
           position: "top-center",
         })
   }
@@ -101,9 +108,9 @@ function App() {
     <>
       <Navbar addMoney={addMoney} buying={buying}></Navbar> 
       <Header hendleAddFreeAmount={hendleAddFreeAmount}></Header>
-        <CartContainer isActive={isActive} hendleAddSelected={hendleAddSelected} 
-        hendleAddIsActive={hendleAddIsActive} addSelected={addSelected}
-        hendleDelete={hendleDelete}></CartContainer>
+      <CartContainer isActive={isActive} hendleAddSelected={hendleAddSelected} 
+      hendleAddIsActive={hendleAddIsActive} addSelected={addSelected}
+      hendleDelete={hendleDelete}></CartContainer>
       <Footer></Footer>
       <ToastContainer/>
     </>
