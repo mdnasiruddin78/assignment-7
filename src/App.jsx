@@ -48,22 +48,25 @@ function App() {
   }
 
   const hendleAddSelected = (player) => {
+
+    if(player.id > 6){
+      toast('No Space Available',{
+        position: "top-center",
+      })
+      return;
+    }
+
     if(addMoney === 0){
        toast('Please Claim Free Credit',{
             position: "top-center",
           })
       return;
     }
-    if(addSelected.length < 6){
-      toast('no space',{
-        position: "top-center",
-      })
-      return;
-    }
+
     const isExist = addSelected.find((i) => i.id === player.id)
 
     if(isExist){
-      toast('player already selected',{
+      toast('Player Already Aelected',{
         position: "top-center",
       })
     }
@@ -92,6 +95,7 @@ function App() {
           position: "top-center",
         })
   }
+
 
   return (
     <>
