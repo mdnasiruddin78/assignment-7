@@ -23,7 +23,7 @@ const Selected = ({addSelected,hendleDelete,hendleAddIsActive,isActive}) => {
                                     </div>
                                 </div>
                                 <div>
-                                    <button onClick={()=>hendleDelete(max.id)}><RiDeleteBin6Line 
+                                    <button onClick={()=>hendleDelete(max.id,max.price)}><RiDeleteBin6Line 
                                     className="text-red-500 text-2xl" /></button>
                                 </div>
                             </div>

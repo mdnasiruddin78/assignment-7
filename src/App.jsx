@@ -33,19 +33,20 @@ function App() {
 
   const [addSelected, setAddSelected] = useState([])
 
-  const hendleDelete = (id) => {
-    removeMoneyReturn(id)
+  const hendleDelete = (id,price) => {
+    // removeMoneyReturn(id)
     const removeItem = addSelected.filter((x) => x.id !== id)
     setAddSelected(removeItem)
+    setAddMoney(addMoney + price)
     toast('Selected Player Remove',{
       position: "top-center",
     })
   }
 
-  const removeMoneyReturn = (id) => {
-      const money = addSelected.find((r) => r.id == id);
-      setBuying(buying + money.price)
-  }
+  // const removeMoneyReturn = (id) => {
+  //     const money = addSelected.find((r) => r.id == id);
+  //     setBuying(buying + money.price)
+  // }
 
   const hendleAddSelected = (player) => {
 
@@ -78,9 +79,13 @@ function App() {
       })
     }
     else{
-      hendleBuyingPrice(player.price)
+      // hendleBuyingPrice(player.price)
+      setAddMoney(addMoney - player.price)
       const newSelected = [...addSelected,player]
       setAddSelected(newSelected)
+      toast('Congrates player is selected',{
+        position: "top-center",
+      })
     }
   }
 
@@ -94,19 +99,19 @@ function App() {
     })
   }
 
-  const [buying, setBuying] = useState(0)
+  // const [buying, setBuying] = useState(0)
 
-  const hendleBuyingPrice = (newPrice) => {
-        setBuying(buying - newPrice)
-        toast('Congrates player is selected',{
-          position: "top-center",
-        })
-  }
+  // const hendleBuyingPrice = (newPrice) => {
+  //       setBuying(buying - newPrice)
+        // toast('Congrates player is selected',{
+        //   position: "top-center",
+        // })
+  // }
 
 
   return (
     <>
-      <Navbar addMoney={addMoney} buying={buying}></Navbar> 
+      <Navbar addMoney={addMoney}></Navbar> 
       <Header hendleAddFreeAmount={hendleAddFreeAmount}></Header>
       <CartContainer isActive={isActive} hendleAddSelected={hendleAddSelected} 
       hendleAddIsActive={hendleAddIsActive} addSelected={addSelected}

@@ -3,7 +3,7 @@ import coinPng from '../../assets/assets/coin.png'
 import logoImage from '../../assets/assets/logo.png'
 
 
-const Navbar = ({addMoney,buying}) => {
+const Navbar = ({addMoney}) => {
     return (
         <div className='max-w-6xl mx-auto flex justify-between mt-10 mb-10 
         sticky top-0 z-50 backdrop-blur bg-white/30'>
@@ -18,7 +18,7 @@ const Navbar = ({addMoney,buying}) => {
                     <li><button>Schedules</button></li>
                 </div>
                 <div className='flex items-center border-2 rounded-xl p-2 space-x-2'>
-                    <p className='text-2xl font-bold'>{addMoney + buying} Coin</p>
+                    <p className='text-2xl font-bold'>{addMoney } Coin</p>
                     <img src={coinPng} alt="" />
                 </div>
             </div>
@@ -28,7 +28,6 @@ const Navbar = ({addMoney,buying}) => {
 
 Navbar.propTypes = {
     addMoney: PropTypes.number,
-    buying: PropTypes.number,
 }
 
 export default Navbar;
